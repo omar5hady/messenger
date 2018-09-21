@@ -9759,16 +9759,15 @@ window.Vue = __webpack_require__(99);
 
 Vue.use(__WEBPACK_IMPORTED_MODULE_0_bootstrap_vue__["a" /* default */]);
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
 Vue.component('example-component', __webpack_require__(215));
 
 var app = new Vue({
-  el: '#app'
+    el: '#app',
+    methods: {
+        logout: function logout() {
+            document.getElementById('logout-form').submit();
+        }
+    }
 });
 
 /***/ }),
