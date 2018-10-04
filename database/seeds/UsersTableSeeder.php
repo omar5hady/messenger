@@ -22,5 +22,10 @@ class UsersTableSeeder extends Seeder
             'email' => 'juan.guzman@grupocumbres.com',
             'password' => bcrypt('oso123')
         ]);
+        User::create([
+            'name' => 'Francisco Galvan',
+            'email' => 'francisco.galvan@grupocumbres.com',
+            'password' => bcrypt('oso123')
+        ]);
     }
 }
